@@ -311,7 +311,7 @@ header.sticky{
 	  display: table;
    width:100%;
    height:470px;
-   background: rgba(0,0,0,.7);
+   background: rgba(0,0,0,.5);
 }
 #home #subheader{
    height:550px;
@@ -1390,7 +1390,7 @@ ul.opening_list li span{
 }
 .parallax-window-2 {
 	height:auto;
-	background: url(../img/bg_office.jpg) no-repeat center center;
+	background: url(../img/baked-beverage-biscuit.jpg) no-repeat center center;
 	background-attachment:fixed;
 	background-size:cover;
 	-webkit-background-size: cover;

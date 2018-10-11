@@ -1,5 +1,5 @@
 <!-- SubHeader =============================================== -->
-<section class="parallax-window" id="short" data-parallax="scroll" data-image-src="img/sub_header_cart.jpg" data-natural-width="1400" data-natural-height="350">
+<section class="parallax-window" id="short" data-parallax="scroll" data-image-src="../../../assets/img/muesli.jpg" data-natural-width="1400" data-natural-height="350">
   <div id="subheader">
     <div id="sub_content">
       <h1>Admin section</h1>
@@ -681,3 +681,36 @@
   </div>
 </div><!-- End container  -->
 <!-- End Content =============================================== -->
+
+<!-- Specific scripts -->
+<script src="./assets/js/tabs.js"></script>
+<script>
+  new CBPFWTabs(document.getElementById('tabs'));
+</script>
+
+<script src="./assets/js/bootstrap3-wysihtml5.min.js"></script>
+<script type="text/javascript">
+  $('.wysihtml5').wysihtml5({});
+</script>
+<script src="./assets/js/dropzone.min.js"></script>
+<script>
+  if ($('.dropzone').length > 0) {
+    Dropzone.autoDiscover = false;
+    $("#photos").dropzone({
+      url: "upload",
+      addRemoveLinks: true
+    });
+
+    $("#logo_picture").dropzone({
+      url: "upload",
+      maxFiles: 1,
+      addRemoveLinks: true
+    });
+
+    $(".menu-item-pic").dropzone({
+      url: "upload",
+      maxFiles: 1,
+      addRemoveLinks: true
+    });
+  }
+</script>

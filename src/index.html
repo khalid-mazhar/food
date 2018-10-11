@@ -44,6 +44,8 @@
 <script src="./assets/js/functions.js"></script>
 <script src="./assets/assets/validate.js"></script>
 
+
+
 <!-- SPECIFIC SCRIPTS -->
 <script  src="./assets/js/cat_nav_mobile.js"></script>
 <script>$('#cat_nav').mobileMenu();</script>
@@ -67,21 +69,6 @@
       additionalMarginTop: 80
     });
 </script>
-
-<!-- SPECIFIC SCRIPTS -->
-<script src="./assets/js/video_header.js"></script>
-<script>
-$(document).ready(function() {
-	'use strict';
-   	  HeaderVideo.init({
-      container: $('.header-video'),
-      header: $('.header-video--media'),
-      videoTrigger: $("#video-trigger"),
-      autoPlayVideo: true
-    });    
-
-});
-</script>
 <script>
   jQuery('#sidebar').theiaStickySidebar({
     additionalMarginTop: 80
@@ -100,37 +87,6 @@ $('#cat_nav a[href^="#"]').on('click', function (e) {
   });
 </script>
 
-<!-- Specific scripts -->
-<script src="./assets/js/tabs.js"></script>
-<script>
-  new CBPFWTabs(document.getElementById('tabs'));
-</script>
 
-<script src="./assets/js/bootstrap3-wysihtml5.min.js"></script>
-<script type="text/javascript">
-  $('.wysihtml5').wysihtml5({});
-</script>
-<script src="./assets/js/dropzone.min.js"></script>
-<script>
-  if ($('.dropzone').length > 0) {
-    Dropzone.autoDiscover = false;
-    $("#photos").dropzone({
-      url: "upload",
-      addRemoveLinks: true
-    });
-
-    $("#logo_picture").dropzone({
-      url: "upload",
-      maxFiles: 1,
-      addRemoveLinks: true
-    });
-
-    $(".menu-item-pic").dropzone({
-      url: "upload",
-      maxFiles: 1,
-      addRemoveLinks: true
-    });
-  }
-</script>
 </body>
 </html>

@@ -15,6 +15,7 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { OrdersManagementComponent } from './admin/orders-management/orders-management.component';
 import { ReportsComponent } from './admin/reports/reports.component';
 import { UserManagementComponent } from './admin/user-management/user-management.component';
+import { CustomizeOrderComponent } from './admin/customize-order/customize-order.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { UserManagementComponent } from './admin/user-management/user-management
     DashboardComponent,
     OrdersManagementComponent,
     ReportsComponent,
-    UserManagementComponent
+    UserManagementComponent,
+    CustomizeOrderComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +48,8 @@ import { UserManagementComponent } from './admin/user-management/user-management
       { path: 'dashboard', component: DashboardComponent },
       { path: 'user-management', component: UserManagementComponent },
       { path: 'orders-management', component: OrdersManagementComponent },
-      { path: 'reports', component: ReportsComponent }
+      { path: 'reports', component: ReportsComponent },
+      { path: 'customize-order', component: CustomizeOrderComponent },
   
     ])
   ],
